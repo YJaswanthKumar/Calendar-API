@@ -1,12 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-# Calendar Booking Service
 
 =======
+
 # Kraftshala Assignment Calendar-API
 
 ## Calendar booking service
->>>>>>> 0aaf51443bb90a7a099c7bd586e5448b54c0440e
+
 ## 1. Objective
 
 ### Goal
@@ -18,36 +18,38 @@ Build a backend calendar booking service that schedules meetings while preventin
 REST API using **Node.js, Express, Sequelize, and SQL** that supports:
 
 <<<<<<< HEAD
+
 - User registration and authentication
 - Creating and fetching users
 - Creating, listing, updating, and deleting meetings
-- Enforcing strict no-overlap booking rules
-=======
+- # Enforcing strict no-overlap booking rules
+
 * User registration and authentication
 * Creating and fetching users
 * Creating, listing, updating, and deleting meetings
 * Enforcing strict no-overlap booking rules
->>>>>>> 0aaf51443bb90a7a099c7bd586e5448b54c0440e
+  > > > > > > > 0aaf51443bb90a7a099c7bd586e5448b54c0440e
 
 ---
 
 ## 2. Technology Stack
 
 <<<<<<< HEAD
+
 - Node.js
 - JavaScript
 - Express
 - Sequelize ORM
 - SQL Database (PostgreSQL / MySQL / SQLite)
-- JWT Authentication
-=======
+- # JWT Authentication
+
 * Node.js
 * JavaScript
 * Express
 * Sequelize ORM
 * SQL Database (PostgreSQL / MySQL / SQLite)
 * JWT Authentication
->>>>>>> 0aaf51443bb90a7a099c7bd586e5448b54c0440e
+  > > > > > > > 0aaf51443bb90a7a099c7bd586e5448b54c0440e
 
 ---
 
@@ -195,14 +197,15 @@ Authorization: Bearer <JWT_TOKEN>
 Optional query params:
 
 <<<<<<< HEAD
+
 - userId
 - startDate
-- endDate
-=======
+- # endDate
+
 * userId
 * startDate
 * endDate
->>>>>>> 0aaf51443bb90a7a099c7bd586e5448b54c0440e
+  > > > > > > > 0aaf51443bb90a7a099c7bd586e5448b54c0440e
 
 **200 Response**
 
@@ -274,17 +277,17 @@ Authorization: Bearer <JWT_TOKEN>
 
 ## 5. Validation Rules
 
-<<<<<<< HEAD
+# HEAD
+
 - `startTime` must precede `endTime`
 - Required fields enforced
 - Conflict checks before create/update
-- Auth token required for protected routes
-=======
+- # Auth token required for protected routes
+
 * `startTime` must precede `endTime`
 * Required fields enforced
 * Conflict checks before create/update
 * Auth token required for protected routes
->>>>>>> 0aaf51443bb90a7a099c7bd586e5448b54c0440e
 
 ---
 
@@ -331,10 +334,11 @@ npx sequelize-cli db:migrate
 ```
 npm run dev
 ```
-<<<<<<< HEAD
-=======
+
+# HEAD
+
 # Kraftshala-Assignment-calender-api
+
 Backend calendar booking service built with Node.js, Express, Sequelize, and SQL. Supports user registration/login with JWT authentication, meeting scheduling, conflict detection to prevent overlapping time slots, and full CRUD APIs for users and meetings.
->>>>>>> c6d616451f07c4c0dd3d2e6d440b595057a5da91
-=======
->>>>>>> 0aaf51443bb90a7a099c7bd586e5448b54c0440e
+
+Note: Hosted on Render free tier. First request may take ~30 seconds due to cold start.
