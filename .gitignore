@@ -1,0 +1,22 @@
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Large media files
+*.mp4
+*.avi
+*.mov
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+coverage/
