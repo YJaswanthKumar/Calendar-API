@@ -1,11 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+# Kraftshala Assignment — Calendar API
 
-=======
+Backend calendar booking service built with **Node.js, Express, Sequelize, and SQL**.
+Supports user registration/login with JWT authentication, meeting scheduling, strict conflict detection, and full CRUD APIs.
 
-# Kraftshala Assignment Calendar-API
+> Hosted on Render (free tier). First request may take ~30 seconds due to cold start.
 
-## Calendar booking service
+---
 
 ## 1. Objective
 
@@ -15,41 +15,23 @@ Build a backend calendar booking service that schedules meetings while preventin
 
 ### Deliverables
 
-REST API using **Node.js, Express, Sequelize, and SQL** that supports:
-
-<<<<<<< HEAD
+A REST API that supports:
 
 - User registration and authentication
 - Creating and fetching users
 - Creating, listing, updating, and deleting meetings
-- # Enforcing strict no-overlap booking rules
-
-* User registration and authentication
-* Creating and fetching users
-* Creating, listing, updating, and deleting meetings
-* Enforcing strict no-overlap booking rules
-  > > > > > > > 0aaf51443bb90a7a099c7bd586e5448b54c0440e
+- Enforcing strict no-overlap booking rules
 
 ---
 
 ## 2. Technology Stack
-
-<<<<<<< HEAD
 
 - Node.js
 - JavaScript
 - Express
 - Sequelize ORM
 - SQL Database (PostgreSQL / MySQL / SQLite)
-- # JWT Authentication
-
-* Node.js
-* JavaScript
-* Express
-* Sequelize ORM
-* SQL Database (PostgreSQL / MySQL / SQLite)
-* JWT Authentication
-  > > > > > > > 0aaf51443bb90a7a099c7bd586e5448b54c0440e
+- JWT Authentication
 
 ---
 
@@ -111,7 +93,7 @@ Meeting.belongsTo(User)
 | -------------- | ------ | ------------------------ |
 | Missing fields | 400    | Required fields missing  |
 | Email exists   | 400    | Email already registered |
-| Success        | 201    | User object              |
+| Success        | 201    | User object returned     |
 
 ---
 
@@ -128,13 +110,13 @@ Meeting.belongsTo(User)
 }
 ```
 
-| Scenario            | Status | Response            |
-| ------------------- | ------ | ------------------- |
-| Missing fields      | 400    | Email/password req. |
-| Invalid credentials | 401    | Invalid credentials |
-| Success             | 200    | JWT token returned  |
+| Scenario            | Status | Response                |
+| ------------------- | ------ | ----------------------- |
+| Missing fields      | 400    | Email/password required |
+| Invalid credentials | 401    | Invalid credentials     |
+| Success             | 200    | JWT token returned      |
 
-**Success Response Example**
+### Success Response
 
 ```json
 {
@@ -194,20 +176,13 @@ Authorization: Bearer <JWT_TOKEN>
 Authorization: Bearer <JWT_TOKEN>
 ```
 
-Optional query params:
-
-<<<<<<< HEAD
+### Optional Query Parameters
 
 - userId
 - startDate
-- # endDate
+- endDate
 
-* userId
-* startDate
-* endDate
-  > > > > > > > 0aaf51443bb90a7a099c7bd586e5448b54c0440e
-
-**200 Response**
+### 200 Response
 
 ```json
 [
@@ -277,17 +252,10 @@ Authorization: Bearer <JWT_TOKEN>
 
 ## 5. Validation Rules
 
-# HEAD
-
-- `startTime` must precede `endTime`
-- Required fields enforced
-- Conflict checks before create/update
-- # Auth token required for protected routes
-
-* `startTime` must precede `endTime`
-* Required fields enforced
-* Conflict checks before create/update
-* Auth token required for protected routes
+- startTime must be earlier than endTime
+- Required fields must be provided
+- Conflict check enforced before create/update
+- JWT required for protected meeting routes
 
 ---
 
@@ -309,13 +277,13 @@ src/
 
 ## 7. Running Locally
 
-### Install
+### Install Dependencies
 
 ```
 npm install
 ```
 
-### Environment
+### Environment Variables
 
 ```
 PORT=3000
@@ -323,22 +291,14 @@ DB_URL=<connection_string>
 JWT_SECRET=<secret_key>
 ```
 
-### Migrate
+### Run Migrations
 
 ```
 npx sequelize-cli db:migrate
 ```
 
-### Start
+### Start Server
 
 ```
 npm run dev
 ```
-
-# HEAD
-
-# Kraftshala-Assignment-calender-api
-
-Backend calendar booking service built with Node.js, Express, Sequelize, and SQL. Supports user registration/login with JWT authentication, meeting scheduling, conflict detection to prevent overlapping time slots, and full CRUD APIs for users and meetings.
-
-Note: Hosted on Render free tier. First request may take ~30 seconds due to cold start.
